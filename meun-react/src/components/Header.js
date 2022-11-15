@@ -1,24 +1,22 @@
 import React from 'react'
-import { AppBar, Button, Tab, Tabs, Toolbar, Typography } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import { AppBar,Button,Stack,Toolbar, Typography } from '@mui/material';
+
 
 function Header() {
   return (
-    <div>
       <AppBar position='static'>
         <Toolbar>
-          <Typography>Ecole Superieure Polytechnique</Typography>
-          <Tabs textColor='inherit' sx={{marginLeft:'auto'}}>
-            <Tab label="A propos"/>
-            <Tab label="Formation"/>
-            <Tab label="Certifications"/>
-            <Tab label="Admission"/>
-            <Tab label="Contact"/>
-          </Tabs>
+          <Typography>Les pains du lendemain</Typography>
+          <Stack spacing={2} direction='row' sx={{marginLeft:'auto'}}>
+            <Button variant='text' color='inherit' href='A_propos'>A propos</Button>
+            <Button variant='text' color='inherit' href='Category'>Category</Button>
+            <Button variant='text' color='inherit' href='Card'>Card</Button>
+            <Button variant='text' color='inherit' href='Contact'>Contact</Button>
+          </Stack>
         </Toolbar>
       </AppBar>
-    </div>
   )
 }
+
 
 export default Header
