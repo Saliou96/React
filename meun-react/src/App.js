@@ -1,18 +1,15 @@
 import './App.css';
-import { useState,Text,Button } from 'react';
+// import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
-  const [name,setName] = useState('moussa');
-  const clickHandler= () => {
-    setName('Alioune');
-  }
-
   return (
     <div className="App">
-      <h1>My name is {name}</h1>
-      <input type="button" name="" value="Update name" onClick={clickHandler}/>
+      <Header/>
+
+      {/* <Footer/> */}
     </div>
   );
 }
 
-export default App;
+export default App
