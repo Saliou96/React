@@ -5,7 +5,7 @@ function Home() {
 
   return (
     <div className='mt-5 d-flex justify-content-center'>
-        <h1>This is Home page!!!!</h1><br/>
+        <h1>This is Home page!!!!</h1>
         <Carte/>
     </div>
   )
