@@ -17,4 +17,7 @@ npm install react-bootstrap bootstrap
 Routing
 
 npm install react-router-dom
+replace switch by routes
+          <Route path='/' element={<Home/>} />
+
 
