@@ -1,5 +1,5 @@
+import { Button } from 'flowbite-react';
 import React, { useState } from 'react'
-import Button from 'react-bootstrap/Button';
 
 function Header({sant,att,niv}) {
 
@@ -22,8 +22,8 @@ function Header({sant,att,niv}) {
   return (
     <div>
       <h1>My name is {name} and i have {age} years old. I am in {classe} at Polytechnic School of Dakar </h1>
-      <Button variant="success" onClick={update}>Update</Button>
-      <Button variant="warning" onClick={reset}>Reset</Button>
+      <Button color="success" onClick={update}>Update</Button>
+      <Button color="warning" onClick={reset}>Reset</Button>
     </div>
   )
 }

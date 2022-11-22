@@ -1,21 +1,21 @@
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import Contact from './components/Contact';
-import Navigation from './components/Navigation';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Navigation from './layout/Navigation';
+import About from './pages/About';
 
 function App() {
   return (
     <div className="App">
       <Navigation/>
       <h3 className='m-3 d-flex justify-content-center'>MEUN REACT PAR FORCE</h3>
-      <Header sant='Saliou' att={21} niv='MGLSI'/>
 
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/contacts' element={<Contact/>} />
+          <Route path='/contact' element={<Contact/>} />
+          <Route path='/about' element={<About/>} />
         </Routes>
       </BrowserRouter>
     </div>
