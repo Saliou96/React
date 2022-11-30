@@ -4,17 +4,19 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Navigation from './layout/Navigation';
 import About from './pages/About';
+// import Footer from './layout/Footer';
 
 function App() {
   return (
     <div className="App">
       <Navigation/>
+      {/* <Footer/> */}
 
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/contact' element={<Contact/>} />
           <Route path='/about' element={<About/>} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
       </BrowserRouter>
 
