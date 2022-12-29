@@ -1,0 +1,7 @@
+ReactJS est une bibliothèque de composants JavaScript permettant de créer des interfaces utilisateur
+
+Facile à apprendre
+Développement d'applications plus rapide
+Réduction du temps de rendu ->>> seules les modifications que vous avez apportées à l’application seront rendues
+Liaison de données unidirectionnelle vers le bas ->>> toute modification apportée aux composants enfants ne modifiera pas le composant parent
+créer des interfaces utilisateur hautement réactives et de qualité.
