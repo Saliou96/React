@@ -8,7 +8,9 @@ import {Label,TextInput,Checkbox,Button} from 'flowbite-react'
 function Register() {
 
   return (
-    <div className='mt-5 d-flex justify-content-center'>
+    <div className='mt-5 d-flex '>
+      <Button><a href="/">Home</a></Button>
+
     {/* <Header sant='Saliou' att={21} niv='MGLSI'/> */}
     <form className="flex flex-col gap-4">
       <div>
@@ -70,7 +72,7 @@ function Register() {
         Register new account
       </Button>
     </form>
-    </div>
+  </div>
   )
 }
 
