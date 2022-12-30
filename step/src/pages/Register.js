@@ -6,7 +6,6 @@ import {Label,TextInput,Checkbox,Button} from 'flowbite-react'
 
 
 function Register() {
-
   return (
     <div className='mt-5 d-flex '>
       <Button><a href="/">Home</a></Button>
