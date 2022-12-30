@@ -1,77 +1,103 @@
 import React from 'react'
-// import Carte from './Carte'
-// import Header from './Header'
-// import Footer from '../layout/Footer';
-import {Label,TextInput,Checkbox,Button} from 'flowbite-react'
+import {Table} from 'flowbite-react'
 
 
 function Home() {
 
   return (
-    <div className='mt-5 d-flex justify-content-center'>
-    {/* <Header sant='Saliou' att={21} niv='MGLSI'/> */}
-    <form className="flex flex-col gap-4">
-      <div>
-        <div className="mb-2 block">
-          <Label
-            htmlFor="email2"
-            value="Your email"
-          />
-        </div>
-        <TextInput
-          id="email2"
-          type="email"
-          placeholder="name@flowbite.com"
-          required={true}
-          shadow={true}
-        />
-      </div>
-      <div>
-        <div className="mb-2 block">
-          <Label
-            htmlFor="password2"
-            value="Your password"
-          />
-        </div>
-        <TextInput
-          id="password2"
-          type="password"
-          required={true}
-          shadow={true}
-        />
-      </div>
-      <div>
-        <div className="mb-2 block">
-          <Label
-            htmlFor="repeat-password"
-            value="Repeat password"
-          />
-        </div>
-        <TextInput
-          id="repeat-password"
-          type="password"
-          required={true}
-          shadow={true}
-        />
-      </div>
-      <div className="flex items-center gap-2">
-        <Checkbox id="agree" />
-        <Label htmlFor="agree">
-          I agree with the{' '}
-          <a
-            href="/forms"
-            className="text-blue-600 hover:underline dark:text-blue-500"
-          >
-            terms and conditions
-          </a>
-        </Label>
-      </div>
-      <Button type="submit">
-        Register new account
-      </Button>
-    </form>
+    <div id='div_table'>
+      <Table>
+      <Table.Head>
+        <Table.HeadCell>
+          Product name
+        </Table.HeadCell>
+        <Table.HeadCell>
+          Color
+        </Table.HeadCell>
+        <Table.HeadCell>
+          Category
+        </Table.HeadCell>
+        <Table.HeadCell>
+          Price
+        </Table.HeadCell>
+        <Table.HeadCell>
+          <span className="sr-only">
+            Edit
+          </span>
+        </Table.HeadCell>
+      </Table.Head>
+      <Table.Body className="divide-y">
+        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+            Apple MacBook Pro 17"
+          </Table.Cell>
+          <Table.Cell>
+            Sliver
+          </Table.Cell>
+          <Table.Cell>
+            Laptop
+          </Table.Cell>
+          <Table.Cell>
+            $2999
+          </Table.Cell>
+          <Table.Cell>
+            <a href="/tables"
+              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+            >
+              Edit
+            </a>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+            Microsoft Surface Pro
+          </Table.Cell>
+          <Table.Cell>
+            White
+          </Table.Cell>
+          <Table.Cell>
+            Laptop PC
+          </Table.Cell>
+          <Table.Cell>
+            $1999
+          </Table.Cell>
+          <Table.Cell>
+            <a
+              href="/tables"
+              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+            >
+              Edit
+            </a>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+            Magic Mouse 2
+          </Table.Cell>
+          <Table.Cell>
+            Black
+          </Table.Cell>
+          <Table.Cell>
+            Accessories
+          </Table.Cell>
+          <Table.Cell>
+            $99
+          </Table.Cell>
+          <Table.Cell>
+            <a
+              href="/tables"
+              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+            >
+              Edit
+            </a>
+          </Table.Cell>
+        </Table.Row>
+      </Table.Body>
+      </Table>
+
     </div>
-  )
+
+      )
 }
 
 export default Home

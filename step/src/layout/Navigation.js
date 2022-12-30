@@ -27,7 +27,7 @@ function Navigation () {
               Bonnie Green
             </span>
             <span className="block truncate text-sm font-medium">
-              name@flowbite.com
+        
             </span>
           </Dropdown.Header>
           <Dropdown.Item>
