@@ -1,32 +1,49 @@
 
 function Home() {
   return (
-    <div>
-        <h1 className="text-3xl font-bold underline">Home</h1>
-        <div className="grid grid-rows-6">
+    <div className="grid md:grid-rows-4">
 
-          <div className="row-span-3">
-            header
+      {/* 1er bloc du bas */}
+      <div className="md:col-span-2 bg-blue-100">
+        header
+      </div>
+      {/* 1er bloc du bas */}
+
+      {/* 2e bloc du bas */}
+      <div className="md:col-span-2 bg-gray-100">
+
+        <div className="grid md:grid-cols-4">
+          {/*  1er bloc à gauche */}
+          <div className="md:col-span-1 bg-green-50">
+            sidebar
           </div>
+          {/*  1er bloc à gauche */}
 
-          <div className="row-span-3">
-            <div className="grid-cols-12">
-              <div className="rid-cols-3">
-                sidebar
-              </div>
-              <div className="rid-cols-9">
-                <div className="rid-cols-5">
-                  content(1)
-                </div>
-                <div className="rid-cols-4">
-                  content(2)
-                </div>
-              </div>
+          {/*  1er bloc à droite */}
+          <div className="md:col-span-2 bg-red-50"> 
+            corps
+          </div>
+          {/*  1er bloc à droite */}
+
+          {/*  1er bloc à droite */}
+          <div className="md:col-span-1 bg-yellow-50"> 
+            <div className="md:col-span-1 bg-pink-100">
+              haut
+            </div>
+            <div className="md:col-span-1 bg-pink-100">
+              bas
             </div>
           </div>
+          {/*  1er bloc à droite */}
 
-        </div>
+        </div> 
+
+      </div>
+      {/* 2e bloc du bas */}
+
     </div>
+
+
   );
 }
 
