@@ -21,26 +21,22 @@ const PostShare = () => {
       <div>
         <input type="text" placeholder="What's happening" />
         <div className="postOptions">
-          <div className="option" style={{ color: "var(--photo)" }}
+        <div className="option" style={{ color: "var(--photo)" }}
           onClick={()=>imageRef.current.click()}
           >
-            {/* <UilScenery />
-            Photo */}
+            Photo
           </div>
-          <div className="option" style={{ color: "var(--video)" }}>
-            {/* <UilPlayCircle />
-            Video */}
-          </div>{" "}
-          <div className="option" style={{ color: "var(--location)" }}>
-            {/* <UilLocationPoint />
-            Location */}
-          </div>{" "}
-          <div className="option" style={{ color: "var(--shedule)" }}>
-            {/* <UilSchedule />
-            Shedule */}
+          <div className="option">
+            Video
+          </div>
+          <div className="option">
+            Location
+          </div>
+          <div className="option">
+            Shedule
           </div>
           <button className="button ps-button">Share</button>
-          <div style={{ display: "none" }}>
+          <div>
             <input
               type="file"
               name="myImage"
@@ -49,11 +45,6 @@ const PostShare = () => {
             />
           </div>
         </div>
-      {/* {image && (
-
-        <div className="previewImage">
-          {/* <UilTimes onClick={()=>setImage(null)}/>
-          <img src={image.image} alt="" /> */}
 
       </div>
     </div>
