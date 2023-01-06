@@ -5,7 +5,7 @@ import Thèmes from "../components/Themes";
 
 function Home() {
   return (
-    <div className="grid-rows-4">
+    <div className="p-4 max-w-5xl grid gap-4">
 
       {/* 1er bloc du bas */}
       <div className="md:col-span-2 bg-blue-100">
